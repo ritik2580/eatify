@@ -1,0 +1,74 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - Market Minds Advisory</title>
+  <!-- Link Global Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Link Dashboard Styles -->
+  <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">Market Minds</div>
+    <nav>
+      <a href="#" class="active" data-content="dashboard">
+        <!-- Dashboard Icon (Optional: Replace with actual SVG/icon) -->
+        Dashboard
+      </a>
+      <a href="#" data-content="profile">
+        Profile
+      </a>
+      <a href="#" data-content="settings">
+        Settings
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Header -->
+    <header class="header">
+      <div class="menu-toggle" id="menuBtn">
+        <!-- Menu Icon (hamburger) -->
+        ☰
+      </div>
+      <div class="app-name">Dashboard</div>
+      <div class="profile">
+        <img src="assets/images/profile.jpg" alt="User Profile">
+      </div>
+    </header>
+
+    <!-- Content Area -->
+    <main class="content" id="contentArea">
+      <h2>Welcome to the Dashboard</h2>
+      <p>This is where your main content will appear.</p>
+      <!-- Dynamic Content Goes Here -->
+    </main>
+  </div>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div id="mobileSidebar" class="fixed inset-0 bg-black bg-opacity-50 hidden">
+    <aside class="sidebar open">
+      <div class="logo">Market Minds</div>
+      <nav>
+        <a href="#" class="active" data-content="dashboard">
+          Dashboard
+        </a>
+        <a href="#" data-content="profile">
+          Profile
+        </a>
+        <a href="#" data-content="settings">
+          Settings
+        </a>
+      </nav>
+    </aside>
+  </div>
+
+  <!-- JavaScript for Dashboard -->
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

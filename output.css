@@ -1,0 +1,177 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #c8d0e0;
+  /* Light gray background */
+  color: #1f2937;
+  /* Dark gray text */
+}
+
+/* Container */
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+
+h1, h2 {
+  color: #3b82f6;
+  /* Blue color */
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Form Elements */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  /* Gray border */
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3b82f6;
+  /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Buttons */
+
+button {
+  padding: 0.75rem;
+  background-color: #3b82f6;
+  /* Blue background */
+  color: #ffffff;
+  /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+  /* Darker blue on hover */
+}
+
+/* Links */
+
+a {
+  color: #3b82f6;
+  /* Blue color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2563eb;
+  /* Darker blue on hover */
+}
+
+/* Error Messages */
+
+.error {
+  color: #ef4444;
+  /* Red color */
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.logo-container {
+  width: 200px;
+  /* Adjust based on your design */
+  height: 80px;
+  /* Adjust based on your design */
+  background-image: url('https://www.baltana.com/files/wallpapers-1/Cookie-Wallpaper-HD-02729.jpg');
+  /* Replace with the actual path to your logo image */
+  background-size: cover;
+  /* Ensure the image covers the entire area */
+  background-position: center;
+  /* Center the image */
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
+  border-radius: 8px;
+  /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Add a shadow for depth */
+  margin: 20px auto;
+  /* Center the logo on the page */
+}
+
+.logo-text {
+  color: white;
+  /* Change to whatever color suits your design */
+  font-size: 2em;
+  /* Adjust font size as necessary */
+  position: absolute;
+  /* Allow text to overlay the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Optional: Add a shadow for better readability */
+}
